@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades Evaluation</title>
+    
+    <!-- Updated path dahil nasa loob ng CSS folder ang styles.css -->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>List of Enrolled Students</h2>
+        
+        <!-- Initial student list table -->
+        <table id="initial-table">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Anna Reyes</td><td>92</td></tr>
+                <tr><td>Ben Santos</td><td>85</td></tr>
+                <tr><td>Carla Cruz</td><td>78</td></tr>
+                <tr><td>David Lim</td><td>97</td></tr>
+                <tr><td>Ella Ramos</td><td>74</td></tr>
+            </tbody>
+        </table>
+
+        <!-- Trigger button for evaluation -->
+        <button id="evaluate-btn" onclick="displayEvaluatedGrades()">Show Grade Equivalent</button>
+
+        <h2>Grade Equivalents</h2>
+        
+        <!-- Output table container -->
+        <table id="evaluated-table">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Grade</th>
+                    <th>Equivalent</th>
+                    <th>Remark</th>
+                    <th>Academic Leader</th>
+                </tr>
+            </thead>
+            <tbody id="grade-output-body">
+                <!-- Dynamic rows target -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Updated path dahil nasa loob ng JS folder ang script.js -->
+    <script src="JS/script.js"></script>
+</body>
+</html>
